@@ -7,13 +7,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
 	<title>Lab 04</title>
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">	
 </head>
 
-<body>
-	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button>+</button>
+<body style="background-color: rgb(94, 182, 255);">
+	<div class="flex justify-center">
+		<div style="vertical-center max-w-screen-xl">
+			<!-- Title -->
+			<div class="flex justify-center">
+				<div class="mx-16 my-10 text-4xl">Minimal Todo List</div>
+			</div>
+			<!-- Input & Button -->
+			<div class="flex justify-center max-w-screen-lg">
+				<input id="Input" type='text' style="width:100%;">
+				<button id="Btn" class="h-10 mx-5 px-5 bg-white rounded-lg text-2xl">+</button>
+			</div>
+
+			<!-- Event List -->
+            <div id="event-list" class="text-black text-xl pb-2 py-5">
+                
+            </div>
+            <!-- Completed Event List -->
+            <div id="completed-list" class="pt-2 text-red text-xl">
+
+            </div>
+		</div>
+	</div>
 </body>
 
 </html>
